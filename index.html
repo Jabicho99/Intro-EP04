@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>El Baratito</h1>
+        <form id="productForm">
+            <label for="product">Product:</label>
+            <input type="text" id="product" required><br>
+            
+            <label for="price">Price (S/):</label>
+            <input type="number" id="price" required><br>
+            
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" required><br>
+            
+            <label for="discount">Discount (%):</label>
+            <input type="number" id="discount" required><br>
+            
+            <label for="exchangeRate">Exchange Rate (USD):</label>
+            <input type="number" id="exchangeRate" required><br>
+            
+            <button type="button" onclick="calculate()">Calculate</button>
+        </form>
+        
+        <div id="results">
+            <p id="import">Import: S/ </p>
+            <p id="totalSoles">Total Payment (S/): </p>
+            <p id="totalDollars">Total Payment (USD): </p>
+            <p id="message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
